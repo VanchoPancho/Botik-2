@@ -5,7 +5,7 @@ import requests
 import goslate
 
 
-vk = vk_api.VkApi(token="")
+vk = vk_api.VkApi(token="8a09d5002083750539abc1de2c1cb8f4516d0706179c0b3a0fdb73215554ce39bc99ba3edbcbdf31e9300")
 
 vk._auth_token()
 
@@ -53,4 +53,3 @@ while True:
                                                                                         "random_id": 0})
                 except:
                     vk.method("messages.send", {"user_id": event.object.from_id, "message": "Вы ввели некорректный запрос","random_id": 0})
-
